@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Литвинов](https://up.htmlacademy.ru/htmlcss/24/user/563053).
-* Наставник: `[Макс Кравченко] (https://vk.com/id97606361)`.
+* Наставник: [Макс Кравченко](https://htmlacademy.ru/profile/dreamoctober).
 
 ---
 
