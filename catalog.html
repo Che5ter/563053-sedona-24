@@ -5,40 +5,48 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body>
+
   <header class="main-header">
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li class="main-nav-item"><a class="main-nav-link" href="#">Информация</a></li>
-        <li class="main-nav-item"><a class="main-nav-link" href="#">Фото и видео</a></li>
-        <li class="main-nav-item"><a class="main-nav-link" href="#">Карта Штата</a></li>
-        <li class="main-nav-item"><a class="main-nav-link" href="#">Гостиницы</a></li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#">Информация</a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#">Карта Штата</a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#">Гостиницы</a>
+        </li>
       </ul>
-      <a class="site-logo"><img src="http://placehold.it/150x100"></a> <!-- лого сайта -->
+      <a class="site-logo" href="index.html"><img src="http://placehold.it/150x100"></a> <!-- лого сайта -->
     </nav>
   </header>
+
   <main class="main-content">
     <h1 class="vissualy-hidden">Поиск жилья</h1>
+
     <section class="filter">
       <form class="filter-form">
         <legend>Инфраструктура:</legend>
         <input type="checkbox" name="pool" value="pool">Бассейн
         <input type="checkbox" name="parking" value="parking">Парковка
         <input type="checkbox" name="wifi" value="wifi">Wifi
-      </form>
-
-      <form class="filter-form-list">
         <legend>Тип жилья:</legend>
         <input type="checkbox" name="hostel" value="hostel">Гостиница
         <input type="checkbox" name="motel" value="motel">Мотель
         <input type="checkbox" name="apartments" value="apartments">Апартаменты
       </form>
-
       <!-- Здесь должна быть форма со стоимостью -->
     </section>
+
     <section class="sorting">
       <h2 class="vissualy-hidden">Результаты поиска</h2>
       <b>Найдено: 3</b>
-      <h3>Сортировка:</h3>
+      <h3 class="sorting-title">Сортировка:</h3>
       <ul class="sorting-list">
         <li class="sorting-item">
           <a class="sorting-link">По цене</a>
@@ -51,56 +59,74 @@
         </li>
       </ul>
     </section>
-    <section class="results-of-searching">
-      <div class="result-of-searching">
-        <img src="http://placehold.it/150x100">
-        <h3>Amara Resort & SPA</h3>
-        <p class="hotel-description">Гостиница</p>
-        <p class="hotel-description">От 4000 Р.</p>
-        <p><a href="#">Подробнее</a></p>
-        <p><a href="#">Забронировать</a></p>
-        <span class="rating">Рейтинг: 8,5</span>
-      </div>
-    </section>
-    <section class="results-of-searching">
-      <div class="result-of-searching">
-        <img src="http://placehold.it/150x100">
-        <h3>DesertQuail Inn</h3>
-        <p class="hotel-description">Мотель</p>
-        <p class="hotel-description">От 3000 Р.</p>
-        <p><a href="#">Подробнее</a></p>
-        <p><a href="#">Забронировать</a></p>
-        <span class="rating">Рейтинг: 8,9</span>
-      </div>
-    </section>
-    <section class="results-of-searching">
-      <div class="result-of-searching">
-        <img src="http://placehold.it/150x100">
-        <h3>Villas at Poco Diablo</h3>
-        <p class="hotel-description">Апартаменты</p>
-        <p class="hotel-description">От 2000 Р.</p>
-        <p><a href="#">Подробнее</a></p>
-        <p><a href="#">Забронировать</a></p>
-        <span class="rating">Рейтинг: 9,2</span>
-      </div>
-    </section>
-  </main>
 
-  <footer class="main-footer">
-    <p>#Visitsedona</p>
-    <ul class="footer-social-list">
-      <li class="footer-social-item">
-        <a href="twitter.com">twitter</a>
-      </li>
-      <li class="footer-social-item">
-        <a href="facebook.com">facebook</a>
-      </li>
-      <li class="footer-social-item">
-        <a href="youtube.com">youtube</a>
-      </li>
-    </ul>
-    <p>Website by <a href="htmlacademy.ru">htmlacademy</a></p>
-  </footer>
+    <section class="searching-results">
+      <div class="searching-results-img">
+        <img src="http://placehold.it/150x100">
+      </div>
+      <h3 class="searching-results-title">Amara Resort & SPA</h3>
+      <div class="searching-results-price">
+        <span class="hotel-price">Гостиница</span>
+        <span class="hotel-price">От 4000 Р.</span>
+      </div>
+      <div class="searchin-results-btn">
+        <a href="#">Подробнее</a>
+        <a href="#">Забронировать</a>
+      </div>
+      <span class="rating">Рейтинг: 8,5</span>
+    </section>
+
+    <section class="searching-results">
+      <div class="searching-results-img">
+        <img src="http://placehold.it/150x100">
+      </div>
+      <h3 class="searching-results-title">DesertQuail Inn</h3>
+      <div class="searching-results-price">
+        <span class="hotel-price">Мотель</span>
+        <span class="hotel-price">От 3000 Р.</span>
+      </div>
+      <div class="searchin-results-btn">
+        <a href="#">Подробнее</a>
+        <a href="#">Забронировать</a>
+      </div>
+      <span class="rating">Рейтинг: 8,9</span>
+    </section>
+
+    <section class="searching-results">
+      <div class="searching-results-img">
+        <img src="http://placehold.it/150x100">
+      </div>
+      <h3 class="searching-results-title">Villas at Poco Diablo</h3>
+      <div class="searching-results-price">
+        <span class="hotel-price">Апартаменты</span>
+        <span class="hotel-price">От 2000 Р.</span>
+      </div>
+      <div class="searchin-results-btn">
+        <a href="#">Подробнее</a>
+        <a href="#">Забронировать</a>
+      </div>
+      <span class="rating">Рейтинг: 9,2</span>
+    </div>
+  </section>
+</main>
+
+<footer class="main-footer">
+  <p>#Visitsedona</p>
+  <ul class="footer-social-list">
+    <li class="footer-social-item">
+      <a href="twitter.com">twitter</a>
+    </li>
+    <li class="footer-social-item">
+      <a href="facebook.com">facebook</a>
+    </li>
+    <li class="footer-social-item">
+      <a href="youtube.com">youtube</a>
+    </li>
+  </ul>
+  <p>Website by
+    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
+  </p>
+</footer>
 
 </body>
 </html>
