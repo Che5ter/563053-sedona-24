@@ -24,7 +24,7 @@
       </ul>
       <a class="site-logo" href="index.html">
         <img src="img\index-logo.svg" width="200" height="100" alt="Логотип Седона">
-      </a> <!-- лого сайта -->
+      </a>
     </nav>
   </header>
 
@@ -34,15 +34,38 @@
     <section class="filter">
       <form class="filter-form">
         <legend>Инфраструктура:</legend>
-        <input type="checkbox" name="pool" value="pool">Бассейн
-        <input type="checkbox" name="parking" value="parking">Парковка
-        <input type="checkbox" name="wifi" value="wifi">Wifi
+        <p class="filter-item">
+          <input type="checkbox" name="pool" value="pool" id="pool-checkbox">
+          <label for="pool-checkbox">Бассейн</label>
+        </p>
+        <p class="filter-item">
+          <input type="checkbox" name="parking" value="parking" id="parking-checkbox">
+          <label for="parking-checkbox">Парковка</label>
+        </p>
+        <p class="filter-item">
+          <input type="checkbox" name="wifi" value="wifi" id="wifi-checkbox">
+          <label for="wifi-checkbox">Wifi</label>
+        </p>
         <legend>Тип жилья:</legend>
-        <input type="checkbox" name="hostel" value="hostel">Гостиница
-        <input type="checkbox" name="motel" value="motel">Мотель
-        <input type="checkbox" name="apartments" value="apartments">Апартаменты
+        <p class="filter-item">
+          <input type="checkbox" name="hostel" value="hostel" id="hostel-checkbox">
+          <label for="hostel-checkbox">Гостиница</label>
+        </p>
+        <p class="filter-item">
+          <input type="checkbox" name="motel" value="motel" id="motel-checkbox">
+          <label for="motel-checkbox">Мотель</label>
+        </p>
+        <p class="filter-item">
+          <input type="checkbox" name="apartments" value="apartments" id="apartments-checkbox">
+          <label for="apartments-checkbox">Апартаменты</label>
+        </p>
+        <p class="filter-cost">
+          <label for="cost-amount"> Стоимость в сутки (Р):</label>
+        </p>
+        <p class="filter-range">От 0 <input type="range" min="0" max="3000" id="cost-amount"> До 3000</p>
+        <button class="button" type="submit">Показать</button>
       </form>
-      <!-- Здесь должна быть форма со стоимостью -->
+
     </section>
 
     <section class="sorting">
