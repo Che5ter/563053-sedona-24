@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.promo {
+  background-color: lightblue;
+  background-image: url("../img/background-sedona.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.main-nav-list {
+  list-style: none;
+}
