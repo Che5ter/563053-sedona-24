@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  width: 1200px;
+  margin: auto;
   padding: 0;
 
   text-transform: uppercase;
@@ -12,18 +13,117 @@ body {
   background-color: #fff;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 a {
   text-decoration: none;
   color: #000;
 }
 
 .promo {
-  background-color: lightblue;
-  background-image: url("../img/background-sedona.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column-reverse;
+  width: auto;
+  height: 717px;
+  background: url("../img/background-sedona.jpg") round lightblue;
+  text-align: center;
+  line-height: 26px;
 }
 
-.main-nav-list {
+.promo h2 {
+  font-size: 21px;
+}
+
+.promo p {
+  color: #333;
+  font-size: 14px;
+}
+
+.promo-description {
+  width: auto;
+  height: 216px;
+  background-color: #fff;
+}
+
+.promo-description::before {
+  content:"";
+  width: 1200px;
+  height: 59px;
+  background-image: url("../img/polygon.svgss");
+
+}
+
+.main-nav-list,
+.reason-list,
+.footer-social-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons {
+  text-align: center;
+}
+
+.reasons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.first-reason {
+  order: 1;
+  width: auto;
+}
+
+.first-reason-picture {
+  order: 2;
+  width: 800px;
+  height: 256px;
+  flex-grow: 1;
+}
+
+.reason-item-1 {
+  order: 3;
+  background-color: black;
+}
+
+.reason-item-2 {
+  order: 4;
+}
+
+.reason-item-3 {
+  order: 5;
+}
+
+.second-reason-picture {
+  order: 6;
+  flex-grow: 1;
+}
+
+.second-reason {
+  order: 7;
+}
+
+.third-reason {
+  order: 8;
+}
+
+.fourth-reason {
+  order: 9;
+}
+
+.fifth-reason {
+  order: 10;
+}
+
+
+.first-reason {
+  background-color: #81b3d2;
 }
