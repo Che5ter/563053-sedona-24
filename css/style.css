@@ -1,20 +1,27 @@
 body {
-  width: 1200px;
+  width: 1280px;
   margin: auto;
   padding: 0;
-
   text-transform: uppercase;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans Regular", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
   visibility: hidden;
+  font-size: 0;
+  height:0;
+
 }
 
 a {
@@ -70,28 +77,51 @@ a {
 .reasons-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   margin:0;
   padding:0;
 }
 
+.reasons-list li
+ {
+  width: 400px;
+}
+
+.reasons-list .second-reason-picture,
+.reasons-list .first-reason-picture {
+  width: 800px;
+}
+
 .first-reason {
   order: 1;
-  width: auto;
+  width: 400px;
+  background-color: #81b3d2;
+}
+
+.first-reason p,
+.second-reason p,
+.third-reason p,
+.fourth-reason p,
+.fifth-reason p{
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.third-reason,
+.fourth-reason,
+.fifth-reason {
+  background-color: #eee;
 }
 
 .first-reason-picture {
   order: 2;
-  width: 800px;
-  height: 256px;
   flex-grow: 1;
 }
 
 .reason-item-1 {
   order: 3;
-  background-color: black;
 }
 
 .reason-item-2 {
@@ -109,6 +139,7 @@ a {
 
 .second-reason {
   order: 7;
+  background-color: #81b3d2;
 }
 
 .third-reason {
@@ -121,9 +152,4 @@ a {
 
 .fifth-reason {
   order: 10;
-}
-
-
-.first-reason {
-  background-color: #81b3d2;
 }
