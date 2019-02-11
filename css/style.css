@@ -3,7 +3,7 @@ body {
   margin: auto;
   padding: 0;
   text-transform: uppercase;
-  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -54,12 +54,14 @@ a {
 .promo p {
   color: #333;
   font-size: 14px;
+  color: #333;
 }
 
 .promo-description {
   width: auto;
   height: 216px;
   background-color: #fff;
+  line-height: 26px;
 }
 
 .promo-description::before {
@@ -106,6 +108,12 @@ a {
   order: 1;
   width: 400px;
   background-color: #81b3d2;
+  color: #fff;
+}
+
+.second-reason {
+  background-color: #81b3d2;
+  color: #fff;
 }
 
 .first-reason p,
@@ -115,6 +123,36 @@ a {
 .fifth-reason p{
   font-size: 14px;
   line-height: 21px;
+}
+
+.searching-hotel {
+  text-align: center;
+  background-color: #fff;
+}
+
+.searching-hotel>p:first-child {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.searching-hotel-link {
+  display: block;
+  width: 568px;
+  height: 86px;
+  margin: 0 auto;
+  padding-top: 35px;
+  background-color: #766357;
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.searching-hotel>p:nth-child(2) {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
 }
 
 .third-reason,
