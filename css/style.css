@@ -34,10 +34,18 @@ a {
   flex-direction: column-reverse;
   width: auto;
   height: 717px;
-  background: url("../img/background-sedona.jpg") round lightblue;
+  background: url("../img/background-sedona.jpg"),
+              url("../img/welcome-sedona.svg");
   text-align: center;
   line-height: 26px;
 }
+
+/* .promo-welcome {
+  width: 459px;
+  height: 353px;
+  background: url("../img/welcome-sedona.svg");
+}
+*/
 
 .promo h2 {
   font-size: 21px;
@@ -152,4 +160,19 @@ a {
 
 .fifth-reason {
   order: 10;
+}
+
+.main-nav-list {
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #fff;
+
+}
+
+.main-nav-item:not(.index-logo) {
+  padding-top: 22px;
 }
