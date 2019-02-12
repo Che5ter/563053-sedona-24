@@ -40,6 +40,12 @@ a {
   line-height: 26px;
 }
 
+.welcome-sedona-picture {
+  position: absolute;
+  top: center;
+  left: 600px;
+}
+
 /* .promo-welcome {
   width: 459px;
   height: 353px;
@@ -49,12 +55,14 @@ a {
 
 .promo h2 {
   font-size: 21px;
+  font-weight: bold;
 }
 
 .promo p {
   color: #333;
   font-size: 14px;
   color: #333;
+  font-weight: normal;
 }
 
 .promo-description {
@@ -70,6 +78,12 @@ a {
   height: 59px;
   background-image: url("../img/polygon.svgss");
 
+}
+
+.reasons-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
 }
 
 .main-nav-list,
@@ -120,9 +134,19 @@ a {
 .second-reason p,
 .third-reason p,
 .fourth-reason p,
-.fifth-reason p{
+.fifth-reason p,
+.reason-item-1 p,
+.reason-item-2 p,
+.reason-item-3 p{
   font-size: 14px;
   line-height: 21px;
+  font-weight: normal;
+}
+
+.reason-item-1,
+.reason-item-2,
+.reason-item-3 {
+  background-color: #fff;
 }
 
 .searching-hotel {
@@ -134,6 +158,13 @@ a {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
+}
+
+.searching-hotel>p:nth-child(2) {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  font-weight: normal;
 }
 
 .searching-hotel-link {
@@ -149,10 +180,55 @@ a {
   line-height: 26px;
 }
 
-.searching-hotel>p:nth-child(2) {
+.searching-hotel-link:hover {
+  background-color: #604e43;
+}
+
+.searching-hotel-link:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.appointment-form {
   font-size: 14px;
-  line-height: 24px;
-  color: #333;
+  line-height: 26px;
+}
+
+.appointment-form input[type="text"] {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.appointment-form button[type="submit"] {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  color: #fff;
+  background-color: #81b3d2;
+  border: none;
+  text-transform: uppercase;
+  width: 458px;
+  height: 58px;
+}
+
+.appointment-form button[type="submit"]:hover {
+  background-color: #669ec0;
+}
+
+.appointment-form button[type="submit"]:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.appointment-form input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.appointment-form input[type="text"]:focus {
+  background-color: #fff;
+  outline: none;
+  border: 2px solid #e5e5e5;
 }
 
 .third-reason,
@@ -213,4 +289,138 @@ a {
 
 .main-nav-item:not(.index-logo) {
   padding-top: 22px;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-form-list {
+  list-style: none;
+}
+
+
+.filter-form-item,
+.filter-form .filter-range {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.filter-form {
+  color: #fff;
+  background-color: lightblue;
+}
+
+.filter-form button[type="submit"] {
+  width: 133px;
+  height: 32px;
+  font: inherit;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid #fff;
+}
+
+.sorting,
+.searching-results
+ {
+  background-color: #fff;
+}
+
+.sorting b {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sorting h3,
+.sorting-list {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.sorting-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.searching-results-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-price {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.main-footer {
+  background-color: rgba(255,255,255,0.9);
+}
+
+.btn-detail {
+  display: block;
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.btn-detail:hover {
+  background-color: #669ec0;
+}
+
+.btn-detail:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.btn-book {
+  display: block;
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.btn-book:hover {
+  background-color: #604e43;
+}
+
+.btn-book:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer .main-footer-visit {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.main-footer .main-footer-htmlacademy {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.searching-results-link:hover {
+  color: #81b3d2;
+}
+
+.searching-results-title:active {
+  color: rgba(0, 0, 0, 0.3);
 }
