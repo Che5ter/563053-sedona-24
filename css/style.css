@@ -164,14 +164,7 @@ a {
   color: #fff;
 }
 
-.first-reason p,
-.second-reason p,
-.third-reason p,
-.fourth-reason p,
-.fifth-reason p,
-.reason-item-1 p,
-.reason-item-2 p,
-.reason-item-3 p{
+.reasons-item p {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -224,8 +217,18 @@ a {
 }
 
 .appointment-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 568px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 26px;
+}
+
+.appointment-item {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .appointment-form input[type="text"] {
@@ -235,15 +238,16 @@ a {
 }
 
 .appointment-form button[type="submit"] {
+  width: 458px;
+  height: 58px;
   font: inherit;
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
   color: #fff;
   background-color: #81b3d2;
   border: none;
   text-transform: uppercase;
-  width: 458px;
-  height: 58px;
 }
 
 .appointment-form button[type="submit"]:hover {
@@ -265,49 +269,42 @@ a {
   border: 2px solid #e5e5e5;
 }
 
-.third-reason,
-.fourth-reason,
-.fifth-reason {
-  background-color: #eee;
+.appointment-form .quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.first-reason-picture {
-  order: 2;
-  flex-grow: 1;
+li.natural-city,
+li.devil-bridge {
+  display: flex;
+  width: 1200px;
+  background-color: #81b3d2;
+  color: #fff;
 }
 
-.reason-item-1 {
+li.devil-bridge {
   order: 3;
 }
 
-.reason-item-2 {
+li.reason-6,
+li.reason-7,
+li.reason-8 {
+  order: 2;
+  background-color: #fff;
+  padding-top: 61px;
+}
+
+li.reason-3,
+li.reason-4,
+li.reason-5 {
   order: 4;
 }
 
-.reason-item-3 {
-  order: 5;
-}
 
-.second-reason-picture {
-  order: 6;
-  flex-grow: 1;
-}
-
-.second-reason {
-  order: 7;
-  background-color: #81b3d2;
-}
-
-.third-reason {
-  order: 8;
-}
-
-.fourth-reason {
-  order: 9;
-}
-
-.fifth-reason {
-  order: 10;
+.reason-1-picture,
+.reason-2-picture {
+  display: flex;
 }
 
 .main-nav-list {
@@ -471,10 +468,4 @@ legend {
 
 .searching-results-title:active {
   color: rgba(0, 0, 0, 0.3);
-}
-
-li.natural-city {
-  display: flex;
-  width: 1200px;
-  background-color: #81b3d2;
 }
