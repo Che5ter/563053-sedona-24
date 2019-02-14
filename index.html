@@ -53,8 +53,8 @@
         <li class="reasons-item natural-city">
           <div class="reason-1">
             <h3 class="reasons-title">Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="reason-text">— №1 —</p>
+            <p class="reason-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="reason-1-picture">
             <img src="img\first-reason-picture.jpg" width="800" height="256">
@@ -67,106 +67,119 @@
           </div>
           <div class="reason-2">
             <h3 class="reasons-title">Там есть мост дьявола</h3>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="reason-text">— №2 —</p>
+            <p class="reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          </li>
-
-          <li class="reasons-item reason-3">
-            <h3 class="reasons-title">Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-
-          <li class="reasons-item reason-4">
-            <h3 class="reasons-title">Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-
-          <li class="reasons-item reason-5">
-            <h3 class="reasons-title">Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-
-          <li class="reasons-item reason-6">
-            <img src="img/reason-icon1.svg" width="75" height="72">
-            <h3 class="reasons-title">Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="reasons-item reason-7">
-            <img src="img/reason-icon3.svg" width="74" height="70">
-            <h3 class="reasons-title">Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="reasons-item reason-8">
-            <img src="img/reason-icon2.svg" width="64" height="76">
-            <h3 class="reasons-title">Сувениры</h3>
-            <p>Не только китайского, но и местного производства</p>
-          </li>
-        </ul>
-
-      </section>
-
-      <section class="searching-hotel">
-        <p>
-          <b>Заинтересовались?</b>
-        </p>
-        <p>Укажите предполагаемые даты поездки,
-          <br> и мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
-
-        <a class="searching-hotel-link">Поиск гостиницы в Седоне</a>
-
-
-        <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
-          <p class="appointment-item">
-            <label for="date-in">Дата заезда:</label>
-            <input type="text" name="date-in" id="date-in" value="24 апреля 2017">
-          </p>
-          <p class="appointment-item">
-            <label for="date-out">Дата выезда:</label>
-            <input type="text" name="date-out" id="date-out" value="4 июля 2017">
-          </p>
-          <div class="quantity">
-            <p class="appointment-item">
-              <label for="adults-amount">Взрослые:</label>
-              <input type="text" name="adults" id="adults-amount" value="2">
-            </p>
-            <p class="appointment-item">
-              <label for="children-amount">Взрослые:</label>
-              <input type="text" name="children" id="children-amount" value="0">
-            </p>
-          </div>
-          <button class="button" type="submit">Найти</button>
-        </form>
-
-      </section>
-
-      <section class="maps">
-        <img src="img\map.jpg" width="100%" height="500" alt="Карта">
-      </section>
-    </main>
-
-    <footer class="main-footer container">
-      <p>#Visitsedona</p>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a href="twitter.com">twitter</a>
         </li>
-        <li class="footer-social-item">
-          <a href="facebook.com">facebook</a>
+
+        <li class="reasons-item reason-3">
+          <h3 class="reasons-title">Небольшая площадь</h3>
+          <p>— №3 —</p>
+          <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="footer-social-item">
-          <a href="youtube.com">youtube</a>
+
+        <li class="reasons-item reason-4">
+          <h3 class="reasons-title">Красивая дорога</h3>
+          <p class="reason-text">— №4 —</p>
+          <p class="reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+
+        <li class="reasons-item reason-5">
+          <h3 class="reasons-title">Мало туристов</h3>
+          <p class="reason-text">— №5 —</p>
+          <p class="reason-text">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+
+        <li class="reasons-item reason-6">
+          <img class="reason-icon" src="img/reason-icon1.svg" width="75" height="72">
+          <h3 class="reasons-title">Жильё</h3>
+          <p class="reason-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </li>
+        <li class="reasons-item reason-7">
+          <img class="reason-icon" src="img/reason-icon3.svg" width="74" height="70">
+          <h3 class="reasons-title">Еда</h3>
+          <p class="reason-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li class="reasons-item reason-8">
+          <img class="reason-icon" src="img/reason-icon2.svg" width="64" height="76">
+          <h3 class="reasons-title">Сувениры</h3>
+          <p class="reason-text">Не только китайского, но и местного производства!</p>
         </li>
       </ul>
-      <p>Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
+
+    </section>
+
+    <section class="searching-hotel">
+      <p>
+        <b>Заинтересовались?</b>
       </p>
-    </footer>
+      <p>Укажите предполагаемые даты поездки,
+        <br> и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
+
+      <a class="searching-hotel-link">Поиск гостиницы в Седоне</a>
 
 
-  </body>
-  </html>
+      <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
+        <p class="appointment-item">
+          <label for="date-in">Дата заезда:</label>
+          <input type="text" name="date-in" id="date-in" value="24 апреля 2017">
+        </p>
+        <p class="appointment-item">
+          <label for="date-out">Дата выезда:</label>
+          <input type="text" name="date-out" id="date-out" value="4 июля 2017">
+        </p>
+        <div class="quantity">
+          <p class="appointment-item">
+            <label for="adults-amount">Взрослые:</label>
+            <input type="text" name="adults" id="adults-amount" value="2">
+          </p>
+          <p class="appointment-item">
+            <label for="children-amount">Взрослые:</label>
+            <input type="text" name="children" id="children-amount" value="0">
+          </p>
+        </div>
+        <button class="button" type="submit">Найти</button>
+      </form>
+
+    </section>
+
+    <section class="maps">
+      <img src="img\map.jpg" width="100%" height="500" alt="Карта">
+    </section>
+  </main>
+
+  <footer class="main-footer container">
+    <p class="footer-visit">#Visitsedona</p>
+    <ul class="footer-social-list">
+      <a href="https://facebook.com">
+        <li class="footer-social-item">
+
+          <img class="footer-social-icon" src="img/facebook-icon.svg">
+          <span class="visually-hidden">twitter</span>
+        </li>
+      </a>
+      <a href="https://twitter.com">
+        <li class="footer-social-item">
+          <img class="footer-social-icon" src="img/twitter-icon.svg">
+          <span class="visually-hidden">facebook</span>
+        </li>
+      </a>
+      <a href="https://youtube.com">
+        <li class="footer-social-item">
+          <img class="footer-social-icon" src="img/youtube-icon.svg">
+          <span class="visually-hidden">youtube</span>
+        </li>
+      </a>
+    </ul>
+    <div class="footer-copyright">
+        <a href="#">
+        <span>Website by</span>
+        <img class="footer-logo" src="img/logo_name.png">
+      </a>
+    </div>
+  </footer>
+
+
+</body>
+</html>
