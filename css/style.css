@@ -70,8 +70,7 @@ a {
   flex-direction: column-reverse;
   width: auto;
   height: 717px;
-  background: url("../img/polygon.svg") no-repeat 0px 449px,
-  url("../img/background-sedona.jpg");
+  background: url("../img/background-sedona.jpg");
 
   text-align: center;
   line-height: 26px;
@@ -96,7 +95,9 @@ background: url("../img/welcome-sedona.svg");
   font-weight: bold;
   margin: 0;
   padding-top: 61px;
-  padding-bottom: 17px;
+  padding-bottom: 27px;
+  padding-left: 380px;
+  padding-right: 380px;
 }
 
 .promo p {
@@ -105,13 +106,25 @@ background: url("../img/welcome-sedona.svg");
   color: #333;
   font-weight: normal;
   margin: 0;
-  padding-bottom: 55px;
+  padding-bottom: 44px;
 }
 
 .promo-description {
+  position: relative;
   width: auto;
   background-color: #fff;
   line-height: 26px;
+}
+
+.promo-description::before {
+  content:"";
+  position: absolute;
+  width: 1200px;
+  height: 59px;
+  background: url("../img/polygon.svg") no-repeat;
+  left: 0px;
+  top: -57px;
+
 }
 
 .reasons-title {
@@ -344,7 +357,33 @@ li.reason-8 {
 
 .reason-text-bottom {
   margin: 0;
-  padding-bottom: 63px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.reason-1 .reason-text-bottom {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.reason-2 .reason-text-bottom {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.reason-3 .reason-text-bottom {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+.reason-4 .reason-text-bottom {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.reason-5 .reason-text-bottom {
+  padding-left: 76px;
+  padding-right: 76px;
 }
 
 
@@ -379,7 +418,7 @@ li.reason-5 {
 
 .main-nav-item {
   width: 239px;
-  padding-top: 13px;
+  padding-top: 14px;
 }
 
 .main-nav-item:nth-child(1),
@@ -393,8 +432,21 @@ li.reason-5 {
 }
 
 .main-nav-item:nth-child(1) {
-  padding-left: 41px;
+  padding-left: 47px;
 }
+
+.main-nav-item:nth-child(2) {
+  margin-right: 47px;
+}
+
+.main-nav-item:nth-child(3) {
+    padding-right: 4px;
+}
+
+.main-nav-item:nth-child(4) {
+  padding-right: 47px;
+}
+
 
 fieldset {
   border: none;
@@ -639,24 +691,38 @@ legend {
 
 .footer-copyright {
   width: 400px;
+  display: flex;
+  flex-direction: row;
 }
+
 
 .footer-visit {
   display: block;
   width: 400px;
+  width: 400px;
   margin: 0;
+  padding-top: 50px;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+  text-align: center;
 }
 
 .footer-copyright span {
-  display: block;
-  vertical-align: center;
-  padding-top: 52px;
+  padding-top: 50px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .footer-logo {
-  padding-top: 39px;
-  padding-right: 101px;
-  float: right;
+  width: 115px;
+  height: 41px;
+}
+
+.footer-copyright-link {
+    padding-top: 40px;
+    margin-left: 8px;
 }
 
 .searching-results-link:hover {
