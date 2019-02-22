@@ -67,28 +67,17 @@ a {
 
 .promo {
   display: flex;
-  flex-direction: column-reverse;
-  width: auto;
-  height: 717px;
+  flex-direction: column;
   background: url("../img/background-sedona.jpg");
-
   text-align: center;
   line-height: 26px;
 }
 
 
 .welcome-sedona-picture {
-  position: absolute;
-  top: 75px;
-  right: 370px;
+  align-self: center;
+  margin-top: 76px;
 }
-
-/* .promo-welcome {
-width: 459px;
-height: 353px;
-background: url("../img/welcome-sedona.svg");
-}
-*/
 
 .promo h2 {
   font-size: 21px;
@@ -106,7 +95,7 @@ background: url("../img/welcome-sedona.svg");
   color: #333;
   font-weight: normal;
   margin: 0;
-  padding-bottom: 44px;
+  padding-bottom: 50px;
 }
 
 .promo-description {
@@ -116,15 +105,8 @@ background: url("../img/welcome-sedona.svg");
   line-height: 26px;
 }
 
-.promo-description::before {
-  content:"";
-  position: absolute;
-  width: 1200px;
-  height: 59px;
-  background: url("../img/polygon.svg") no-repeat;
-  left: 0px;
-  top: -57px;
-
+.polygon-index {
+    padding-top: 22px;
 }
 
 .reasons-title {
@@ -333,7 +315,7 @@ li.reason-8 {
 
 .reasons-title {
   margin: 0;
-  padding-top: 50px;
+  padding-top: 47px;
 }
 
 .reason-icon {
@@ -343,13 +325,13 @@ li.reason-8 {
 .reason-6 .reason-text,
 .reason-7 .reason-text,
 .reason-8 .reason-text {
-  padding-top: 30px;
-  padding-bottom: 85px;
+  padding-top: 23px;
+  padding-bottom: 82px;
   margin: 0;
 }
 
 .reason-text-middle {
-  padding-top: 30px;
+  padding-top: 24px;
   padding-right: 58px;
   padding-left: 58px;
   margin: 0;
@@ -357,8 +339,7 @@ li.reason-8 {
 
 .reason-text-bottom {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 21px;
 }
 
 .reason-1 .reason-text-bottom {
@@ -367,24 +348,61 @@ li.reason-8 {
 }
 
 .reason-2 .reason-text-bottom {
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 47px;
+    padding-right: 47px;
+}
+
+.reason-2 .reasons-title {
+    padding-left: 125px;
+    padding-right: 124px;
+}
+
+.reason-3 .reasons-title {
+  padding-left: 142px;
+  padding-right: 141px;
+}
+
+.reason-4 .reasons-title {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.reason-5 .reasons-title {
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .reason-3 .reason-text-bottom {
   padding-left: 96px;
   padding-right: 96px;
+  padding-bottom: 59px;
 }
 
 .reason-4 .reason-text-bottom {
-  padding-left: 70px;
+  padding-left: 69px;
   padding-right: 70px;
+  padding-bottom: 59px;
 }
 
 .reason-5 .reason-text-bottom {
   padding-left: 76px;
   padding-right: 76px;
+  padding-bottom: 59px;
 }
+
+.reason-6 .reason-text {
+  padding-left: 73px;
+  padding-right: 75px;
+}
+.reason-7 .reason-text {
+  padding-left: 57px;
+  padding-right: 58px;
+}
+.reason-8 .reason-text {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
 
 
 li.reason-3,
@@ -404,6 +422,31 @@ li.reason-5 {
   display: flex;
   flex-direction: column;
   width: 400px;
+}
+
+.reason-6 .reason-icon {
+  width: 75px;
+  height: 72px;
+  margin: auto;
+  margin-top: 60px;
+  background-image: url("../img/reason-icon1.svg");
+  background-repeat: no-repeat;
+}
+.reason-7 .reason-icon {
+  width: 74px;
+  height: 70px;
+  margin: auto;
+  margin-top: 61px;
+  background-image: url("../img/reason-icon3.svg");
+  background-repeat: no-repeat;
+}
+.reason-8 .reason-icon {
+  width: 64px;
+  height: 76px;
+  margin: auto;
+  margin-top: 56px;
+  background-image: url("../img/reason-icon2.svg");
+  background-repeat: no-repeat;
 }
 
 .main-nav-list {
