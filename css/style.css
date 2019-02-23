@@ -69,6 +69,7 @@ a {
   display: flex;
   flex-direction: column;
   background: url("../img/background-sedona.jpg");
+  background-position: 0px -56px;
   text-align: center;
   line-height: 26px;
 }
@@ -172,6 +173,7 @@ a {
 }
 
 .searching-hotel {
+  position: relative;
   text-align: center;
   background-color: #fff;
 }
@@ -180,6 +182,7 @@ a {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
+  padding-top: 50px;
 }
 
 .searching-hotel>p:nth-child(2) {
@@ -187,6 +190,7 @@ a {
   line-height: 24px;
   color: #333;
   font-weight: normal;
+  padding-top: 10px;
 }
 
 .searching-hotel-link {
@@ -194,7 +198,8 @@ a {
   width: 568px;
   height: 86px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 30px;
+  margin-top: 47px;
   background-color: #766357;
   color: #fff;
   text-align: center;
@@ -215,6 +220,9 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  position: absolute;
+  left: 316px;
+  background-color: #fff;
   width: 568px;
   margin: 0 auto;
   font-size: 14px;
@@ -310,7 +318,7 @@ li.reason-8 {
 .reason-7 .reasons-title,
 .reason-8 .reasons-title {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 161px;
 }
 
 .reasons-title {
@@ -424,29 +432,22 @@ li.reason-5 {
   width: 400px;
 }
 
-.reason-6 .reason-icon {
-  width: 75px;
-  height: 72px;
-  margin: auto;
-  margin-top: 60px;
+.reasons-item.reason-6 {
   background-image: url("../img/reason-icon1.svg");
   background-repeat: no-repeat;
+  background-position: 162px 60px;
 }
-.reason-7 .reason-icon {
-  width: 74px;
-  height: 70px;
-  margin: auto;
-  margin-top: 61px;
+
+.reasons-item.reason-7 {
   background-image: url("../img/reason-icon3.svg");
   background-repeat: no-repeat;
+  background-position: 50% 61px;
 }
-.reason-8 .reason-icon {
-  width: 64px;
-  height: 76px;
-  margin: auto;
-  margin-top: 56px;
+
+.reasons-item.reason-8 {
   background-image: url("../img/reason-icon2.svg");
   background-repeat: no-repeat;
+  background-position: 50% 56px;
 }
 
 .main-nav-list {
@@ -647,10 +648,6 @@ legend {
   padding-right: 40px;
 }
 
-.main-footer {
-  background-color: rgba(255,255,255,0.9);
-}
-
 .btn-detail {
   display: block;
   width: 110px;
@@ -698,7 +695,18 @@ legend {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: rgba(255,255,255,0.9);
+}
 
+.main-footer-index {
+  position: absolute;
+  left: 352px;
+  bottom: -1793px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.9);
 }
 
 .footer-social-list {
@@ -720,6 +728,16 @@ legend {
   height: 48px;
   background-color: #81b3d2;
   margin-right: 6px;
+}
+
+.main-footer .main-footer-visit {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.main-footer .main-footer-htmlacademy {
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .main-footer .main-footer-visit {
