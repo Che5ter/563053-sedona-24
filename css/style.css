@@ -233,28 +233,47 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  width: auto;
 }
 
 .appointment-form input[type="text"] {
   width: 346px;
+  height: 38px;
   font: inherit;
   background-color: #f2f2f2;
   border: none;
   text-align: left;
-  padding-left: 13px;
+  padding-left: 11px;
+  margin-left: 23px;
   box-sizing: border-box;
   text-transform: uppercase;
+}
+
+input#date-out {
+    padding-left: 12px;
+    margin-left: 19px;
+}
+
+input#children-amount {
+    margin-left: 27px;
 }
 
 .quantity input[type="text"] {
   width: 114px;
   text-align: center;
+  margin-left: 41px;
+  padding-left: 0px;
 }
 
 .appointment-item label {
-  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.appointment-date {
+  display: flex;
+  flex-direction: column;
+  padding-top: 42px;
+  padding-left: 57px;
 }
 
 .appointment-form button[type="submit"] {
@@ -262,6 +281,8 @@ a {
   height: 58px;
   font: inherit;
   margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 55px;
   font-size: 21px;
   line-height: 26px;
   color: #fff;
@@ -292,7 +313,12 @@ a {
 .appointment-form .quantity {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  padding-top: 3px;
+  padding-left: 55px;
+}
+
+.quantity .appointment-item:nth-child(2) {
+    margin-left: 53px;
 }
 
 li.natural-city,
@@ -699,14 +725,8 @@ legend {
 }
 
 .main-footer-index {
-  position: absolute;
-  left: 352px;
-  bottom: -1793px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: rgba(255,255,255,0.9);
+  position: relative;
+  margin-top: -127px;
 }
 
 .footer-social-list {
@@ -719,11 +739,11 @@ legend {
 
 }
 
-.footer-social-item {
+.social-button {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
@@ -754,23 +774,22 @@ legend {
   width: 400px;
   display: flex;
   flex-direction: row;
+  padding-left: 103px;
 }
 
 
 .footer-visit {
   display: block;
   width: 400px;
-  width: 400px;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 47px;
   font-size: 21px;
   line-height: 26px;
-  margin: 0;
   text-align: center;
 }
 
 .footer-copyright span {
-  padding-top: 50px;
+  padding-top: 47px;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;

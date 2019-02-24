@@ -116,14 +116,16 @@
       <a class="searching-hotel-link">Поиск гостиницы в Седоне</a>
 
       <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
-        <p class="appointment-item">
-          <label for="date-in">Дата заезда:</label>
-          <input type="text" name="date-in" id="date-in" value="24 апреля 2017">
-        </p>
-        <p class="appointment-item">
-          <label for="date-out">Дата выезда:</label>
-          <input type="text" name="date-out" id="date-out" value="4 июля 2017">
-        </p>
+        <div class="appointment-date">
+          <p class="appointment-item">
+            <label for="date-in">Дата заезда:</label>
+            <input type="text" name="date-in" id="date-in" value="24 апреля 2017">
+          </p>
+          <p class="appointment-item">
+            <label for="date-out">Дата выезда:</label>
+            <input type="text" name="date-out" id="date-out" value="4 июля 2017">
+          </p>
+        </div>
         <div class="quantity">
           <p class="appointment-item">
             <label for="adults-amount">Взрослые:</label>
@@ -147,25 +149,27 @@
   <footer class="main-footer main-footer-index container">
     <p class="footer-visit">#Visitsedona</p>
     <ul class="footer-social-list">
-      <a href="https://facebook.com">
-        <li class="footer-social-item">
-
-          <img class="footer-social-icon" src="img/facebook-icon.svg">
-          <span class="visually-hidden">twitter</span>
-        </li>
-      </a>
-      <a href="https://twitter.com">
-        <li class="footer-social-item">
+      <li class="footer-social-item">
+        <a class="social-button" href="https://facebook.com">
           <img class="footer-social-icon" src="img/twitter-icon.svg">
+          <span class="visually-hidden">twitter</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="social-button" href="https://twitter.com">
+          <img class="footer-social-icon" src="img/facebook-icon.svg">
           <span class="visually-hidden">facebook</span>
-        </li>
-      </a>
-      <a href="https://youtube.com">
-        <li class="footer-social-item">
+        </a>
+      </li>
+
+
+      <li class="footer-social-item">
+        <a class="social-button" href="https://youtube.com">
           <img class="footer-social-icon" src="img/youtube-icon.svg">
           <span class="visually-hidden">youtube</span>
-        </li>
-      </a>
+        </a>
+      </li>
+
     </ul>
     <div class="footer-copyright">
 
