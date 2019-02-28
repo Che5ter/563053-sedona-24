@@ -7,7 +7,6 @@ html {
 
 
 body {
-  width: 1280px;
   margin: auto;
   padding: 0;
   text-transform: uppercase;
@@ -520,11 +519,12 @@ li.reason-5 {
 
 .filter-form fieldset {
   padding: 0;
+  margin: 0;
   border: none;
 }
 
 .filter-form legend {
-  padding-top: 20px;
+  padding-top: 27px;
   font-size: 16px;
   line-height: 21px;
 }
@@ -534,16 +534,29 @@ li.reason-5 {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: lightblue;
+  background-image: url("../img/filter_background.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -55px;
+
 }
 
 .filter-block {
     padding-left: 73px;
 }
 
+.filter-block:nth-child(2) fieldset {
+    margin-left: 43px;
+}
+
+.filter-block:nth-child(2) input[type="checkbox"] + label {
+  padding-left: 42px;
+}
+
 .filter-range {
+  margin-bottom: 33px;
   margin-left: auto;
-  margin-right: 50px;
-  padding-top: 20px;
+  margin-right: 72px;
+  padding-top: 26px;
 }
 
 .filter-form-list {
@@ -558,7 +571,7 @@ li.reason-5 {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  padding-top: 10px;
+  padding-top: 24px;
 }
 
 .filter-form {
@@ -569,11 +582,9 @@ li.reason-5 {
 }
 
 .filter-form button[type="submit"] {
-  width: 133px;
-  height: 32px;
+  width: 137px;
+  height: 36px;
   text-transform: uppercase;
-  color: #fff;
-  background-color: rgba(255,255,255,0.1);
   border: 2px solid #fff;
 }
 
@@ -613,6 +624,8 @@ li.reason-5 {
 
 .rating-list {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -626,13 +639,21 @@ li.reason-5 {
 .rating-item {
   width: 17px;
   height: 18px;
-  margin-right: 6px;
+  margin-left: 7px;
   font-size: 0;
   background: url("../img/star.svg");
 }
 
 .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 111px;
   margin-top: auto;
+  padding-left: 4px;
+  padding-bottom: 2px;
+  background-color: #f2f2f2;
+  color: #666666;
 }
 
 .sorting {
@@ -640,6 +661,7 @@ li.reason-5 {
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
 }
 
 .sorting,
@@ -651,7 +673,8 @@ li.reason-5 {
 .sorting b {
   font-size: 21px;
   line-height: 26px;
-  padding-left: 73px;
+  padding-left: 72px;
+  padding-top: 20px;
 }
 
 .sorting h3,
@@ -659,8 +682,9 @@ li.reason-5 {
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
-  margin-left: 37px;
+  margin-left: 47px;
   margin-right: 37px;
+  padding-top: 24px;
 }
 
 .sorting-list {
@@ -669,6 +693,22 @@ li.reason-5 {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: 4px;
+  padding-top: 23px;
+}
+
+.sorting-updown-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  margin-left: auto;
+  margin-right: 64px;
+}
+
+.sorting-updown-item {
+  margin-right: 10px;
 }
 
 .sorting-item {
@@ -677,12 +717,17 @@ li.reason-5 {
 
 .searching-results-title {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 15px;
   margin: 0;
+}
+
+.searching-results-price {
+  margin-top: 11px;
 }
 
 .searching-results-btns {
   display: flex;
+  margin-top: 13px;
 }
 
 .hotel-price {
@@ -695,12 +740,13 @@ li.reason-5 {
 }
 
 .btn-detail {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 110px;
   height: 27px;
   background-color: #81b3d2;
   color: #fff;
-  text-align: center;
   font-size: 14px;
   line-height: 21px;
   margin-right: 5px;
@@ -717,12 +763,13 @@ li.reason-5 {
 
 
 .btn-book {
-  display: block;
+  display: flex;
   width: 142px;
   height: 27px;
+  justify-content: center;
+  align-items: center;
   background-color: #766357;
   color: #fff;
-  text-align: center;
   font-size: 14px;
   line-height: 21px;
 }
@@ -834,14 +881,15 @@ li.reason-5 {
 }
 
 .filter-range {
-  width: 330px;
+  width: 318px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
-
+  padding-top: 1px;
+  padding-left: 1px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -850,7 +898,7 @@ li.reason-5 {
 .price-controls {
   box-sizing: content-box;
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -873,7 +921,7 @@ li.reason-5 {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 30px;
   vertical-align: top;
   font-weight: normal;
   cursor: pointer;
@@ -883,6 +931,10 @@ li.reason-5 {
 .price-controls .max-price {
   width: 90px;
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  padding-left: 56px;
 }
 
 .price-controls input {
@@ -944,13 +996,12 @@ li.reason-5 {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
-
+  padding: 6px 34px;
+  margin-left: 85px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -970,7 +1021,8 @@ li.reason-5 {
 .filter-form input[type="checkbox"] + label {
   display: inline-block;
   position: relative;
-  padding-left: 28px;
+  padding-left: 38px;
+  padding-top: 1px;
   line-height: 20px;
   cursor: pointer;
 }
