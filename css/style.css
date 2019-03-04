@@ -266,16 +266,24 @@ input#date-out {
   top: 0;
 }
 
-input#children-amount {
-    margin-left: 27px;
-}
-
 .quantity input[type="text"] {
   position: relative;
-  width: 114px;
+  width: 38px;
   text-align: center;
-  margin-left: 41px;
   padding-left: 0px;
+  margin: 0;
+}
+
+.quantity .plus-adult,
+.quantity .minus-adult {
+  display: block;
+  width: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #a9a9a9;
 }
 
 .quantity input[type="text"]::after {
