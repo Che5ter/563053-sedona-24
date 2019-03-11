@@ -256,35 +256,33 @@ input#date-out {
   position: relative;
 }
 
-.date-in::after {
-  content: "222";
-  position: absolute;
-  width: 21px;
-  height: 22px;
-  background: url("../img/calendar.svg") no-repeat;
-  right: 0;
-  top: 0;
-}
-
-input#children-amount {
-    margin-left: 27px;
-}
-
 .quantity input[type="text"] {
   position: relative;
-  width: 114px;
+  width: 38px;
   text-align: center;
-  margin-left: 41px;
+  margin-left: 0px;
   padding-left: 0px;
 }
 
-.quantity input[type="text"]::after {
-  content: "+";
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  top: 0;
-  right: 0;
+.quantity .btn-minus,
+.quantity .btn-plus {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.adults-counter,
+.children-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.children-counter {
+    margin-left: 0;
 }
 
 .appointment-item label {
@@ -336,7 +334,7 @@ input#children-amount {
 .appointment-form .quantity {
   display: flex;
   flex-direction: row;
-  padding-top: 3px;
+  padding-top: 9px;
   padding-left: 55px;
 }
 
