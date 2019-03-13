@@ -42,9 +42,7 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -106,7 +104,8 @@ a {
 }
 
 .polygon-index {
-    padding-top: 22px;
+  display: flex;
+  padding-top: 22px;
 }
 
 .reasons-title {
@@ -230,6 +229,7 @@ a {
 
 .appointment-item {
   display: flex;
+  position: relative;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -317,6 +317,20 @@ input#date-out {
   left: 14px;
 }
 
+.btn-minus:hover::after,
+.btn-minus:hover::before,
+.btn-plus:hover::after,
+.btn-plus:hover::before {
+  background-color: #000;
+}
+
+.btn-minus:active::after,
+.btn-minus:active::before,
+.btn-plus:active::after,
+.btn-plus:active::before {
+  background-color: #81b3d2;
+}
+
 .adults-counter,
 .children-counter {
   display: flex;
@@ -393,8 +407,23 @@ input#date-out {
   padding-top: 17px;
 }
 
-.appointment-date-icon {
+/*.appointment-date-icon {
   background: url("../img/calendar.svg") 315px center no-repeat;
+}
+*/
+.apointment-form-calendar {
+  position: absolute;
+  top: 8px;
+  left: 426px;
+  fill: #cacaca;
+}
+
+.apointment-form-calendar:hover {
+  fill: #000;
+}
+
+.apointment-form-calendar:active {
+  fill: #81b3d2;
 }
 
 li.natural-city,
@@ -566,6 +595,14 @@ li.reason-5 {
 .main-nav-item {
   width: 239px;
   padding-top: 14px;
+}
+
+.main-nav-link:hover {
+  color: #81b3d2;
+}
+
+.main-nav-link:active {
+  color: #cacaca;
 }
 
 .main-nav-item:nth-child(1),
@@ -793,6 +830,36 @@ li.reason-5 {
   margin-right: 32px;
 }
 
+.sorting-link {
+  color: #cacaca;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-link:hover {
+  color: #8bb9d5;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-link:active {
+  color: #000;
+  border-bottom: none;
+}
+
+.sorting-up-svg,
+.sorting-down-svg {
+  fill: #cacaca;
+}
+
+.sorting-up-svg:hover,
+.sorting-down-svg:hover {
+  fill: #2f2b2c;
+}
+
+.sorting-up-svg:active,
+.sorting-down-svg:active {
+  fill: #81b3d2;
+}
+
 .searching-results-title {
   font-size: 21px;
   line-height: 15px;
@@ -902,6 +969,14 @@ li.reason-5 {
   padding-top: 1px;
 }
 
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: transparent;
+}
+
 .main-footer .main-footer-visit {
   font-size: 21px;
   line-height: 26px;
@@ -955,6 +1030,16 @@ li.reason-5 {
 .footer-copyright-link {
     padding-top: 40px;
     margin-left: 8px;
+}
+
+.copyright-svg:hover path,
+.copyright-svg:hover rect {
+  fill: #81b3d2;
+}
+
+.copyright-svg:active path,
+.copyright-svg:active rect {
+  fill: #bdbbbc;
 }
 
 .searching-results-link:hover {
@@ -1055,10 +1140,8 @@ li.reason-5 {
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1068,6 +1151,7 @@ li.reason-5 {
 
 .range-toggle:hover {
   background: #1c4f80;
+  transform: scale(1.2);
 }
 
 .range-toggle-min {
@@ -1123,6 +1207,29 @@ li.reason-5 {
   background-repeat: no-repeat;
 }
 
+.filter-form input[type="checkbox"] + label:hover::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-form input[type="checkbox"]:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
 .filter-form input[type="checkbox"]:checked + label::before {
   content: "";
   position: absolute;
@@ -1132,4 +1239,27 @@ li.reason-5 {
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
+}
+
+.filter-form input[type="checkbox"]:checked + label:hover::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-form input[type="checkbox"]:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
