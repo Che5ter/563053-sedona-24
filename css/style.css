@@ -1289,3 +1289,21 @@ li.reason-5 {
   background-repeat: no-repeat;
   opacity: 0.3;
 }
+
+.main-nav-link--active {
+  color: #766357;
+}
+
+.sorting-link--active {
+  color: #766357;
+}
+
+.sorting-updown-link--active .sorting-down-svg {
+  fill: #81b3d2;
+}
+
+.sorting-updown-link {
+  padding: 0;
+  background: none;
+  border: none;
+}

@@ -25,7 +25,7 @@
           <a class="main-nav-link" href="#">Карта Штата</a>
         </li>
         <li class="main-nav-item">
-          <a class="main-nav-link" href="catalog.html">Гостиницы</a>
+          <a class="main-nav-link main-nav-link--active" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -99,7 +99,7 @@
           <h3 class="sorting-title">Сортировка:</h3>
           <ul class="sorting-list">
             <li class="sorting-item">
-              <a class="sorting-link">По цене</a>
+              <a class="sorting-link sorting-link--active">По цене</a>
             </li>
             <li class="sorting-item">
               <a class="sorting-link">По типу</a>
@@ -110,16 +110,20 @@
           </ul>
           <ul class="sorting-updown-list">
             <li class="sorting-updown-item">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-              <polygon class="sorting-up-svg" fill="#231F20" points="5.5,0 0,10 11,10 "/>
-            </svg>
+              <button class="sorting-updown-link sorting-updown-link--active" type="button" aria-label="Сортировка по возрастанию">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polygon class="sorting-up-svg" fill="#231F20" points="5.5,0 0,10 11,10 "/>
+              </svg>
+            </button>
           </li>
           <li class="sorting-updown-item">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-            <polyline class="sorting-down-svg" fill="#231F20" points="5.5,10 0,0 11,0 "/>
-          </svg>
+            <button class="sorting-updown-link" type="button" aria-label="Сортировка по убыванию">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+              <polygon class="sorting-down-svg" fill="#231F20" points="5.5,10 0,0 11,0 "/>
+              </svg>
+            </button>
         </li>
       </ul>
     </div>
