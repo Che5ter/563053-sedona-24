@@ -241,10 +241,30 @@
 <script>
 var link = document.querySelector(".searching-hotel-link");
 var popup = document.querySelector(".appointment-form");
+var form = document.querySelector("form");
+var dateIn = document.querySelector("[name=date-in]");
+var dateOut = document.querySelector("[name=date-out]");
+var children = document.querySelector("[name=children]");
+var adults = document.querySelector("[name=adults]");
+
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("searching-hotel-show");
+})
+form.addEventListener("submit", function (evt) {
+  if (!dateIn.value || !dateOut.value || children==0 || adults==0) {
+  evt.preventDefault();
+  console.log("Нужно заполнить поля");
+}
+})
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("searching-hotel-show")) {
+      popup.classList.remove("searching-hotel-show");
+      }
+    }
 })
 </script>
 </body>

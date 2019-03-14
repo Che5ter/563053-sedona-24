@@ -133,9 +133,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
   list-style: none;
   margin:0;
   padding:0;
+  z-index: 2;
 }
 
 .reasons-list li
@@ -176,7 +178,7 @@ a {
   position: relative;
   text-align: center;
   background-color: #fff;
-  z-index: 1;
+  z-index: 2;
 }
 
 .searching-hotel>p:first-child {
@@ -351,19 +353,11 @@ input#date-out {
 
 @keyframes descent {
   0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
+    transform: translateY(-600px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
 }
 
@@ -575,6 +569,7 @@ li.reason-3,
 li.reason-4,
 li.reason-5 {
   order: 4;
+  background-color: #eee;
 }
 
 
