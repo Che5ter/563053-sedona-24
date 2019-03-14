@@ -69,6 +69,7 @@ a {
   flex-direction: column;
   background: url("../img/background-sedona.jpg");
   background-position: 0px -56px;
+  background-color: lightblue;
   text-align: center;
   line-height: 26px;
 }
@@ -791,6 +792,7 @@ li.reason-5 {
   align-items: center;
   width: 111px;
   margin-top: auto;
+  margin-left: auto;
   padding-left: 4px;
   padding-bottom: 2px;
   background-color: #f2f2f2;
@@ -812,6 +814,7 @@ li.reason-5 {
 }
 
 .sorting b {
+  min-width: 189px;
   font-size: 21px;
   line-height: 26px;
   padding-left: 72px;
@@ -831,6 +834,7 @@ li.reason-5 {
 .sorting-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -854,6 +858,8 @@ li.reason-5 {
 
 .sorting-item {
   margin-right: 32px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .sorting-link {
@@ -1000,7 +1006,7 @@ li.reason-5 {
 }
 
 .social-button:active {
-  background-color: transparent;
+  opacity: 0.3;
 }
 
 .main-footer .main-footer-visit {
@@ -1298,7 +1304,7 @@ li.reason-5 {
   color: #766357;
 }
 
-.sorting-updown-link--active .sorting-down-svg {
+.sorting-up-svg--active {
   fill: #81b3d2;
 }
 
