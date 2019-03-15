@@ -395,12 +395,6 @@ a {
   animation: descent 0.6s;
 }
 
-.form-error {
-  display: flex;
-  flex-direction: column;
-}
-
-
 .quantity .appointment-item:first-child {
   padding-left: 55px;
 }
