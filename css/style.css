@@ -390,13 +390,13 @@ a {
   }
 }
 
-.searching-hotel-error {
-  animation: shake 0.6s;
-}
-
 .searching-hotel-show {
   display: flex;
   animation: descent 0.6s;
+}
+
+.searching-hotel-error {
+  animation: shake 0.6s;
 }
 
 .quantity .appointment-item:first-child {
@@ -465,9 +465,6 @@ a {
 }
 */
 .apointment-form-calendar {
-  position: absolute;
-  top: 8px;
-  left: 426px;
   fill: #cacaca;
 }
 
@@ -1341,4 +1338,32 @@ li.reason-5 {
   padding: 0;
   background: none;
   border: none;
+}
+
+.appointment-button-calendar {
+  position: absolute;
+  top: 8px;
+  left: 426px;
+  padding: 0px;
+  border: none;
+  background: none;
+}
+
+.appointment-date-in::-webkit-input-placeholder {
+  color: #000;
+}
+.appointment-date-in::-moz-placeholder {
+  color: #000;
+}
+.appointment-date-in:-moz-placeholder {
+  color: #000;
+}
+.appointment-date-in:-ms-input-placeholder {
+  color: #000;
+}
+.appointment-date-in::-ms-input-placeholder {
+  color: #000;
+}
+.appointment-date-in::placeholder {
+  color: #000;
 }
