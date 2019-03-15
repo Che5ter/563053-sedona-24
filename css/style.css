@@ -69,6 +69,7 @@ a {
   flex-direction: column;
   background: url("../img/background-sedona.jpg");
   background-position: 0px -56px;
+  background-color: lightblue;
   text-align: center;
   line-height: 26px;
 }
@@ -132,9 +133,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
   list-style: none;
   margin:0;
   padding:0;
+  z-index: 2;
 }
 
 .reasons-list li
@@ -175,7 +178,7 @@ a {
   position: relative;
   text-align: center;
   background-color: #fff;
-  z-index: 1;
+  z-index: 2;
 }
 
 .searching-hotel>p:first-child {
@@ -244,15 +247,18 @@ a {
   background-color: #f2f2f2;
   border: none;
   text-align: left;
-  padding-left: 11px;
-  margin-left: 23px;
   box-sizing: border-box;
   text-transform: uppercase;
 }
 
-input#date-out {
-    padding-left: 12px;
-    margin-left: 19px;
+.appointment-form .appointment-date-in {
+  padding-left: 11px;
+  margin-left: 23px;
+}
+
+.appointment-form .appointment-date-out {
+  padding-left: 12px;
+  margin-left: 19px;
 }
 
 .date-in {
@@ -350,25 +356,48 @@ input#date-out {
 
 @keyframes descent {
   0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
+    transform: translateY(-600px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.searching-hotel-error {
+  animation: shake 0.6s;
 }
 
 .searching-hotel-show {
   display: flex;
   animation: descent 0.6s;
+}
+
+.form-error {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -574,6 +603,7 @@ li.reason-3,
 li.reason-4,
 li.reason-5 {
   order: 4;
+  background-color: #eee;
 }
 
 
@@ -791,6 +821,7 @@ li.reason-5 {
   align-items: center;
   width: 111px;
   margin-top: auto;
+  margin-left: auto;
   padding-left: 4px;
   padding-bottom: 2px;
   background-color: #f2f2f2;
@@ -812,6 +843,7 @@ li.reason-5 {
 }
 
 .sorting b {
+  min-width: 189px;
   font-size: 21px;
   line-height: 26px;
   padding-left: 72px;
@@ -831,6 +863,7 @@ li.reason-5 {
 .sorting-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -854,6 +887,8 @@ li.reason-5 {
 
 .sorting-item {
   margin-right: 32px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .sorting-link {
@@ -908,6 +943,7 @@ li.reason-5 {
   line-height: 21px;
   font-weight: normal;
   padding-right: 40px;
+  vertical-align: middle;
 }
 
 .btn-detail {
@@ -1000,7 +1036,7 @@ li.reason-5 {
 }
 
 .social-button:active {
-  background-color: transparent;
+  opacity: 0.3;
 }
 
 .main-footer .main-footer-visit {
@@ -1220,6 +1256,7 @@ li.reason-5 {
   padding-top: 1px;
   line-height: 20px;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .filter-form input[type="checkbox"] + label::before {
@@ -1298,7 +1335,7 @@ li.reason-5 {
   color: #766357;
 }
 
-.sorting-updown-link--active .sorting-down-svg {
+.sorting-up-svg--active {
   fill: #81b3d2;
 }
 
