@@ -73,7 +73,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("../img/background-sedona.jpg");
+  background: url("../img/background-sedona.jpg") no-repeat;
   background-position: 0px -56px;
   background-color: lightblue;
   text-align: center;
@@ -1188,6 +1188,9 @@ li.reason-5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+   -webkit-box-align: center;
+      -ms-flex-align: center;
+         align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
