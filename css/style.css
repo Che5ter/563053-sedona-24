@@ -686,7 +686,7 @@ li.reason-5 {
 }
 
 .filter-block:nth-child(2) fieldset {
-    margin-left: 43px;
+  margin-left: 43px;
 }
 
 .filter-block:nth-child(2) input[type="checkbox"] + label {
