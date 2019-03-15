@@ -247,15 +247,18 @@ a {
   background-color: #f2f2f2;
   border: none;
   text-align: left;
-  padding-left: 11px;
-  margin-left: 23px;
   box-sizing: border-box;
   text-transform: uppercase;
 }
 
-input#date-out {
-    padding-left: 12px;
-    margin-left: 19px;
+.appointment-form .appointment-date-in {
+  padding-left: 11px;
+  margin-left: 23px;
+}
+
+.appointment-form .appointment-date-out {
+  padding-left: 12px;
+  margin-left: 19px;
 }
 
 .date-in {
@@ -940,6 +943,7 @@ li.reason-5 {
   line-height: 21px;
   font-weight: normal;
   padding-right: 40px;
+  vertical-align: middle;
 }
 
 .btn-detail {
@@ -1252,6 +1256,7 @@ li.reason-5 {
   padding-top: 1px;
   line-height: 20px;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .filter-form input[type="checkbox"] + label::before {
