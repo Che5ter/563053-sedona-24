@@ -219,8 +219,12 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.appointment-form {
+.modal-form {
   display: none;
+}
+
+.appointment-form {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   position: absolute;

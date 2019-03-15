@@ -114,8 +114,8 @@
 
       <a class="searching-hotel-link">Поиск гостиницы в Седоне</a>
     </section>
-
-    <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
+    <section class="modal modal-form">
+      <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
         <div class="appointment-date">
           <p class="appointment-item">
             <svg class="apointment-form-calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -187,7 +187,8 @@
       </div>
     </div>
     <button class="button" type="submit">Найти</button>
-</form>
+  </form>
+</section>
 
 <section class="maps">
   <img class="maps-picture" src="img\map.jpg" width="100%" height="500" alt="Карта города Седона">
@@ -240,18 +241,18 @@
 
 <script>
 var link = document.querySelector(".searching-hotel-link");
-var popup = document.querySelector(".appointment-form");
-var form = document.querySelector("form");
-var dateIn = document.querySelector("[name=date-in]");
-var dateOut = document.querySelector("[name=date-out]");
-var children = document.querySelector("[name=children]");
-var adults = document.querySelector("[name=adults]");
+var popup = document.querySelector(".modal-form");
+var form = popup.querySelector("form");
+var dateIn = popup.querySelector("[name=date-in]");
+var dateOut = popup.querySelector("[name=date-out]");
+var children = popup.querySelector("[name=children]");
+var adults = popup.querySelector("[name=adults]");
 
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("searching-hotel-show");
-  popup.classList.remove("searching-hotel-error");
+  
 })
 form.addEventListener("submit", function (evt) {
   if (!dateIn.value || !dateOut.value || children==0 || adults==0) {
