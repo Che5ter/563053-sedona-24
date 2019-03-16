@@ -1600,3 +1600,7 @@ li.reason-5 {
   background: url("../img/map.jpg") no-repeat;
   background-color: #eee;
 }
+
+.yandex-interactive-map {
+  frameborder: 0;
+}
