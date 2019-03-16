@@ -112,13 +112,13 @@
         <br> и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
 
-      <a class="searching-hotel-link" href="#">Поиск гостиницы в Седоне</a>
+      <a class="searching-hotel-link" href="form.html">Поиск гостиницы в Седоне</a>
     </section>
     <section class="modal modal-form">
       <form class="appointment-form" method="post" action="https://echo.htmlacademy.ru">
         <div class="appointment-date">
           <p class="appointment-item">
-            <button type="button" class="appointment-button-calendar">
+            <button type="button" class="appointment-button-calendar" aria-label="Календарь">
               <svg class="apointment-form-calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
               <g id="calendar_1_">
@@ -145,7 +145,7 @@
           <input class="appointment-date-in appointment-date-icon" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
         </p>
         <p class="appointment-item">
-          <button type="button" class="appointment-button-calendar">
+          <button type="button" class="appointment-button-calendar" aria-label="Календарь">
             <svg class="apointment-form-calendar" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
             <g id="calendar_2_">
@@ -176,17 +176,17 @@
       <div class="appointment-item">
         <label for="adults-amount">Взрослые:</label>
         <div class="adults-counter">
-          <button class="btn-minus" type="button"></button>
+          <button class="btn-minus" type="button" aria-label="Убрать одного взрослого"></button>
           <input type="text" name="adults" id="adults-amount" value="2">
-          <button class="btn-plus" type="button"></button>
+          <button class="btn-plus" type="button" aria-label="Добавить одного взрослого"></button>
         </div>
       </div>
       <div class="appointment-item">
         <label for="children-amount">Дети:</label>
         <div class="children-counter">
-          <button class="btn-minus" type="button"></button>
+          <button class="btn-minus" type="button" aria-label="Убрать одного ребенка"></button>
           <input type="text" name="children" id="children-amount" value="0">
-          <button class="btn-plus" type="button"></button>
+          <button class="btn-plus" type="button" aria-label="Добавить одного ребенка"></button>
         </div>
       </div>
     </div>
@@ -196,7 +196,7 @@
 
 <section class="maps">
   <h2 class="visually-hidden">Где мы находимся</h2>
-  <iframe src="https://yandex.ru/map-widget/v1/-/CCeRAZ~N" width="1200" height="593">
+  <iframe class="yandex-interactive-map" src="https://yandex.ru/map-widget/v1/-/CCeRAZ~N" width="1200" height="593">
   </iframe>
 </section>
 
@@ -207,19 +207,19 @@
   <ul class="footer-social-list">
     <li class="footer-social-item">
       <a class="social-button" href="https://facebook.com">
-        <img class="footer-social-icon" src="img/twitter-icon.svg" alt="">
+        <img class="footer-social-icon" src="img/twitter-icon.svg" alt="" width="17" height="15">
         <span class="visually-hidden">twitter</span>
       </a>
     </li>
     <li class="footer-social-item">
       <a class="social-button" href="https://twitter.com">
-        <img class="footer-social-icon" src="img/facebook-icon.svg" alt="">
+        <img class="footer-social-icon" src="img/facebook-icon.svg" alt="" width="12" height="22">
         <span class="visually-hidden">facebook</span>
       </a>
     </li>
     <li class="footer-social-item">
       <a class="social-button" href="https://youtube.com">
-        <img class="footer-social-icon" src="img/youtube-icon.svg" alt="">
+        <img class="footer-social-icon" src="img/youtube-icon.svg" alt="" width="20" height="16">
         <span class="visually-hidden">youtube</span>
       </a>
     </li>
@@ -227,7 +227,7 @@
   <div class="footer-copyright">
 
     <span>Website by</span>
-    <a class="footer-copyright-link" href="#">
+    <a class="footer-copyright-link" href="#" aria-label="Сайт HTML-academy">
       <svg class="copyright-svg" width="115" height="41" id="Layer_3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39"><title>logo_name</title>
         <path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,395.17,349.23,395.17,350.33Z" transform="translate(-355.09 -323.29)" fill="#000"/>
         <path d="M408.15,343.91a5.29,5.29,0,0,1,2.7.67v1.79a4.28,4.28,0,0,0-2.42-.73,2.89,2.89,0,1,0,0,5.76,5.26,5.26,0,0,0,2.55-.67v1.8a6.58,6.58,0,0,1-2.9.6,4.42,4.42,0,0,1-4.72-4.54A4.54,4.54,0,0,1,408.15,343.91Z" transform="translate(-355.09 -323.29)" fill="#000"/>
@@ -245,39 +245,6 @@
     </a>
   </div>
 </footer>
-
-<script>
-var link = document.querySelector(".searching-hotel-link");
-var popup = document.querySelector(".modal-form");
-var form = popup.querySelector("form");
-var dateIn = popup.querySelector("[name=date-in]");
-var dateOut = popup.querySelector("[name=date-out]");
-var children = popup.querySelector("[name=children]");
-var adults = popup.querySelector("[name=adults]");
-
-
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.toggle("searching-hotel-show");
-  popup.classList.remove("searching-hotel-error");
-})
-form.addEventListener("submit", function (evt) {
-  if (!dateIn.value || !dateOut.value) {
-    evt.preventDefault();
-    popup.classList.remove("searching-hotel-error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("searching-hotel-error");
-  }
-})
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("searching-hotel-show")) {
-      popup.classList.remove("searching-hotel-show");
-      popup.classList.remove("searching-hotel-error");
-    }
-  }
-})
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
