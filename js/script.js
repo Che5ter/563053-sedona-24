@@ -6,6 +6,9 @@ var dateOut = popup.querySelector("[name=date-out]");
 var children = popup.querySelector("[name=children]");
 var adults = popup.querySelector("[name=adults]");
 
+if (popup.classList.contains("modal-form")) {
+  popup.classList.add("modal-off");
+};
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
