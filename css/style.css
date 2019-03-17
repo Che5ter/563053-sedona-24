@@ -51,6 +51,20 @@ a {
   overflow: hidden;
 }
 
+.visually-hidden-all {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-content {
   position: relative;
 }
@@ -85,6 +99,7 @@ a {
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 76px;
+  padding-bottom: 79px;
 }
 
 .promo h2 {
@@ -111,6 +126,16 @@ a {
   width: auto;
   background-color: #fff;
   line-height: 26px;
+}
+
+.promo-description::before {
+  content: "";
+  position: absolute;
+  width: 1200px;
+  height: 59px;
+  left: 0;
+  top: -57px;
+  background: url("../img/polygon.svg") no-repeat;
 }
 
 .polygon-index {
@@ -1528,6 +1553,18 @@ li.reason-5 {
   opacity: 0.3;
 }
 
+.filter-form input[type="checkbox"]:checked:focus + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  outline: 1px solid lightblue;
+}
+
 .filter-form input[type="checkbox"]:focus + label::before {
   content: "";
   position: absolute;
@@ -1537,7 +1574,7 @@ li.reason-5 {
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  outline: 2px blue;
+  outline: 1px solid lightblue;
 }
 
 .filter-form input[type="checkbox"]:checked + label:hover::before {
