@@ -11,7 +11,8 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("searching-hotel-show");
   popup.classList.remove("searching-hotel-error");
-})
+});
+
 form.addEventListener("submit", function (evt) {
   if (!dateIn.value || !dateOut.value) {
     evt.preventDefault();
@@ -19,7 +20,8 @@ form.addEventListener("submit", function (evt) {
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("searching-hotel-error");
   }
-})
+});
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
@@ -28,4 +30,4 @@ window.addEventListener("keydown", function (evt) {
       popup.classList.remove("searching-hotel-error");
     }
   }
-})
+});

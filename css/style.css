@@ -38,7 +38,6 @@ a {
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -604,10 +603,6 @@ a {
   padding-top: 17px;
 }
 
-/*.appointment-date-icon {
-  background: url("../img/calendar.svg") 315px center no-repeat;
-}
-*/
 .apointment-form-calendar {
   fill: #cacaca;
 }
@@ -682,20 +677,20 @@ li.reason-8 {
 }
 
 .reason-1 .reason-text-bottom {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 5px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 5px;
 }
 
 .reason-2 .reason-text-bottom {
-    padding-left: 47px;
-    padding-right: 47px;
-    padding-bottom: 5px;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-bottom: 5px;
 }
 
 .reason-2 .reasons-title {
-    padding-left: 125px;
-    padding-right: 124px;
+  padding-left: 125px;
+  padding-right: 124px;
 }
 
 .reason-3 .reasons-title {
@@ -882,7 +877,7 @@ li.reason-5 {
 }
 
 .filter-block {
-    padding-left: 73px;
+  padding-left: 73px;
 }
 
 .filter-block:nth-child(2) fieldset {
@@ -1246,9 +1241,9 @@ li.reason-5 {
 }
 
 .main-footer::after {
-    content:'';
-    min-height:inherit;
-    font-size:0;
+  content:'';
+  min-height:inherit;
+  font-size:0;
 }
 
 .main-footer-index {
@@ -1360,8 +1355,8 @@ li.reason-5 {
 }
 
 .footer-copyright-link {
-    padding-top: 9px;
-    margin-left: 8px;
+  padding-top: 9px;
+  margin-left: 8px;
 }
 
 .copyright-svg:hover path,
@@ -1411,12 +1406,10 @@ li.reason-5 {
 .price-controls::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-
   width: 2px;
   height: 22px;
-
+  top: 50%;
+  left: 50%;
   background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
