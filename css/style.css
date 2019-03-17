@@ -1473,11 +1473,6 @@ li.reason-5 {
   background: #ffffff;
 }
 
-.filter-form input[type="checkbox"]
-{
-  display: none;
-}
-
 .filter-form input[type="checkbox"] + label {
   display: inline-block;
   position: relative;
@@ -1531,6 +1526,18 @@ li.reason-5 {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
+}
+
+.filter-form input[type="checkbox"]:focus + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  outline: 2px blue;
 }
 
 .filter-form input[type="checkbox"]:checked + label:hover::before {
